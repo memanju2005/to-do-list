@@ -22,6 +22,18 @@
 input{
     cursor: pointer;
 }
+#progress{
+    height: 10px;
+    width: 100px;
+    background-color: #f8faf8;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+#complete{
+    height: 10px;
+    width: 0px;
+    background-color: #06d006;
+}
 
 #input button{
     background: radial-gradient(#11de48, #d8ee31);
