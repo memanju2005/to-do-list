@@ -7,6 +7,7 @@ const tasks=[];
 let progress=document.getElementById("complete");
 let list=document.getElementById("mylist");
 let congrat=document.getElementById("congrat");
+let icon=document.getElementById("icon");
 // for(i=0;i<tasks.length;i++)
 //     {
 //         let li=document.createElement("li");
@@ -15,9 +16,12 @@ let congrat=document.getElementById("congrat");
 //     }
 function display_congrats(){
   congrat.style.display="block";
+  icon.style.display="none";
   console.log("hello");
   setTimeout(() => {
-    congrat.style.display = "none"; // Hide the message after 3 seconds
+    congrat.style.display = "none";
+    icon.style.display="block";
+     // Hide the message after 3 seconds
   }, 1000);
 }
 function progress_setter(){
